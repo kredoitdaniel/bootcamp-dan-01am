@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;  
+*/
+
+
+/* CSS Selectors */
+
+/* 
+    universal selector = (*)
+        -> call all the elements
+*/
+
+/* * {
+    background-color: green;
+    color: white;
+} */
+
+
+
+/* Elements selector */
+body {
+    background-color: darkgoldenrod;
+}
+
+h1 {
+    color: white;
+}
+
+span {
+    color: aqua;
+}
+
+h2 {
+    background-color: darkmagenta;
+}
+
+
+/* class selector */
+.logo {
+    background-color: darkmagenta;
+    height: 100px;
+}
+
+.content1 {
+    background-color: darkorchid;
+    color: white;
+}
+
+
+/* id selector */
+#description {
+    color: yellowgreen;
+}
+
+
+/* and selector using (,) */
+h1,
+h2 {
+    color: gainsboro;
+}
+
+
+/* descendant selector using (space) 
+    to be specific
+*/
+.content2 h2 span {
+    color: orange;
+}
+
+
+
+/* CSS Typography */
+/* CSS Color */
+/* rgb(red,green,blue) 
+        max values for every color: 255
+
+        rgb(0, 0, 0)        = black
+        rgb(255, 255, 255)  = white
+*/
+.content3 {
+    background-color: rgb(226, 84, 11);
+}
+
+
+/* rgba(red, green, blue, alpha channel) 
+
+        alpha channel = control the transparency/visibility
+                    0 = not visible
+                   .5 = 50% visibility
+                    1 = 100% visibility
+*/
+.content4 {
+    background-color: rgba(226, 84, 11, .5);
+}
+
+
+/* opacity 
+
+    0 = not visible
+    .5 = 50% visibility
+    1 = 100% visibility
+*/
+.content5 {
+    background-color: rgb(226, 84, 11);
+    opacity: .5;
+}
+
+
+/* hexcode 
+        #rrggbb
+*/
+.content6 {
+    background-color: #ffc6c6;
+}
+
+
+/* font-family 
+        1. serif
+        2. sans-serif
+        3. monospace
+*/
+.content7 {
+    font-family: monospace;
+}
+
+
+/* font-family import */
+.content8 h2{
+    font-family: 'Oswald', sans-serif;
+}
+
+.content8 p {
+    font-family: 'Raleway', sans-serif; 
+}
+
+
+/* font-size 
+
+    unit values:
+        px = fixed
+        %  = relevant to the parent
+        em = relevant to the parent
+
+        default font-size = 16px
+
+        16px = 100% = 1em
+*/
+
+.content9 h2 {
+    font-size: 50px;
+}
+
+.content9 p {
+    font-size: 32px;
+}
+
+.content9 .percent{
+    font-size: 100%;
+}
+
+.content9 .em {
+    font-size: 2em;
+}
+
+
+/* font-weight
+
+    1. light
+    2. normal
+    3. bold
+
+    100 - 900
+*/
+.content10 .lighter {
+    font-weight: light;
+}
+
+.content10 .normal {
+    font-weight: normal;
+}
+
+.content10 .bold {
+    font-weight: 900;
+}
+
+
+/* font-style
+
+        1. normal
+        2. italic
+        3. oblique
+*/
+
+.content11 .normal {
+    font-style: normal;
+}
+
+.content11 .italic {
+    font-style: italic;
+}
+
+.content11 .oblique {
+    font-style: oblique;
+}
+
+
+/* text-transform
+
+        1. uppercase
+        2. lowercase
+        3. capitalize
+*/
+.content12 .uppercase {
+    text-transform: uppercase;
+}
+
+.content12 .lowercase {
+    text-transform: lowercase;
+}
+
+.content12 .capitalize {
+    text-transform: capitalize;
+}
+
+
+/* text-decoration
+
+        1. overline
+        2. underline
+        3. line-through
+        4. none
+*/
+.content13 .overline {
+    text-decoration: overline;
+}
+
+.content13 .underline {
+    text-decoration: underline;
+}
+
+.content13 .line-through {
+    text-decoration: line-through;
+}
+
+.content13 a {
+    text-decoration: none;
+}
+
+
+/* text-align
+
+        1. left (default)
+        2. center
+        3. right
+*/
+.content14 .left {
+    text-align: left;
+}
+
+.content14 .center {
+    text-align: center;
+}
+
+.content14 .right {
+    text-align: right;
+}
+
+
+/* text-shadow
+
+        text-shadow: 0 0 0 color;
+        1st value = horizontal(- go left), (+ go right)
+        2nd value = vertical(- go top), (+ go bottom)
+        3rd value = blurry
+        4th value = color
+*/
+.content15 h2 {
+    text-shadow: 3px -3px 4px #069A8E,
+                 -3px 3px 4px #f8b400;
+    text-align: center;
+}
+
+
+/* text-indent
+        px, %, em
+*/
+.content16 .px {
+    text-indent: 50px;
+}
+
+.content16 .percent {
+    text-indent: 5%;
+}
+
+.content16 .em {
+    text-indent: 5em;
+}
+
+
+/* letter spacing */
+.content17 p {
+    letter-spacing: 5px;
+}
+
+
+/* word-spacing */
+.content18 p {
+    word-spacing: 10px;
+}
+
+
+/* CSS List 
+
+    unordered list
+        disc
+        circle
+        square
+        none
+
+    ordered list
+        decimal
+        lower-alpha
+        upper-alpha
+        lower-roman
+        upper-roman
+
+    shorcut:
+        list-style: list-style-type list-style-position;
+*/
+.content19 ul {
+    background-color: darkorchid;
+    /* list-style-type: upper-roman;
+    list-style-position: inside; */
+    list-style: upper-roman inside;
+}
+
+.content19 ul li {
+    background-color: aqua;
+}
+
+.content19 ol {
+    list-style-type: circle;
+}

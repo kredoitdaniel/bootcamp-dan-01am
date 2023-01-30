@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+</head>
+<body>
+    <!-- HTML Tables
+
+            attributes:
+                border = add borders to the table
+                width  = give width size of the table
+
+                colspan = combine/merge columns
+                rowspan = combine/merge rows
+
+            table = parent
+
+            children:
+                tr = provide row
+                td = provide data content / column
+                th = header content / column
+
+            Grouping:
+                thead = group header contents
+                tbody = group body contents
+                tfoot = group footer contents
+    -->
+
+    <!-- using td as column -->
+    <h3>using td as column</h3>
+    <table border="1" width="300px">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+    <!-- using th as column -->
+    <h3>using th as column</h3>
+    <table border="1" width="300px">
+        <tr>
+            <th>Title 1</th>
+            <th>Title 2</th>
+            <th>Title 3</th>
+        </tr>
+        <tr>
+            <th>Title 4</th>
+            <th>Title 5</th>
+            <th>Title 6</th>
+        </tr>
+        <tr>
+            <th>Title 7</th>
+            <th>Title 8</th>
+            <th>Title 9</th>
+        </tr>
+    </table>
+
+    <!-- Grouping header, body and footer contents -->
+    <h3>Grouping header, body and footer contents</h3>
+    <table border="1" width="300px">
+        <thead>
+            <tr>
+                <th>Math</th>
+                <th>Science</th>
+                <th>English</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>85</td>
+                <td>74</td>
+                <td>95</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Good</th>
+                <th>Fail</th>
+                <th>Excellent</th>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- colspan -->
+    <h3>colspan</h3>
+    <table border="1" width="300px">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Number</th>
+            <!-- <th>Contact Number</th> -->
+        </tr>
+
+        <tr>
+            <td>Bill</td>
+            <td>12345</td>
+            <td>67890</td>
+        </tr>
+
+        <tr>
+            <td>Steve</td>
+            <td>13579</td>
+            <td>24680</td>
+        </tr>
+    </table>
+
+    <!-- rowspan -->
+    <h3>rowspan</h3>
+    <table border="1" width="300px">
+        <tr>
+            <th>Name</th>
+            <td>Bill</td>
+            <td>Steve</td>
+        </tr>
+
+        <tr>
+            <th>Contact Number</th>
+            <td>12345</td>
+            <td>13579</td>
+        </tr>
+
+        <tr>
+            <th>Contact Number</th>
+            <td>67890</td>
+            <td>24680</td>
+        </tr>
+    </table>
+</body>
+</html>

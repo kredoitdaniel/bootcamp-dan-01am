@@ -1,0 +1,104 @@
+/* Box Model */
+
+.box1 {
+    width: 500px;
+    border: 1px solid red;
+    text-align: center;
+    /* margin: 30px 50px 60px 70px; */
+    /* margin-bottom: 50px; */
+    /* padding: 30px 50px; */
+    /* margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px; */
+    /* margin: 30px auto; */
+    padding-right: 30px;
+    box-sizing: border-box; /*maintain thye size of the box*/
+}
+
+.box2 {
+    border: 1px solid blue;
+    width: 500px;
+    box-sizing: border-box;
+}
+
+/* hr */
+hr {
+    width: 30%;
+    height: 2px;
+    background-color: red;
+    border: none;
+}
+
+/* CSS Border */
+.solid {
+    height: 50px;
+    width: 100px;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red; */
+    border: 5px solid red;
+    /* border-top: 10px solid red; */
+    border-top-width: 10px;
+    border-top-color: blue;
+    border-right-style: dotted;
+    border-left-style: double;
+    margin-bottom: 5px;
+}
+
+.dotted {
+    height: 50px;
+    width: 100px;
+    border: 5px dotted teal;
+    margin-bottom: 5px;
+}
+
+.dashed {
+    height: 50px;
+    width: 100px;
+    border: 5px dashed crimson;
+    margin-bottom: 5px;
+}
+
+.double {
+    height: 50px;
+    width: 100px;
+    border: 5px double seagreen;
+    margin-bottom: 5px;
+}
+
+.groove {
+    height: 50px;
+    width: 100px;
+    border: 5px groove purple;
+    margin-bottom: 5px;
+}
+
+.ridge {
+    height: 50px;
+    width: 100px;
+    border: 5px ridge gray;
+    margin-bottom: 5px;
+}
+
+.inset {
+    height: 50px;
+    width: 100px;
+    border: 5px inset dodgerblue;
+    margin-bottom: 5px;
+}
+
+.outset {
+    height: 50px;
+    width: 100px;
+    border: 5px outset goldenrod;
+    margin-bottom: 5px;
+}
+
+.radius {
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 50px;
+}
